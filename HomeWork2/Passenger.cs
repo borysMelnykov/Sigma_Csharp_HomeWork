@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace HomeWork2
 {
-   public class Passenger
+    public class Passenger
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public int age { get; set; }
-        public DateTime regDate { get; set; }
-        public bool isPrimary { get; set; }
-        public int somePrice;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public DateTime RegDate { get; set; }
+        public bool IsPrimary { get; set; }
+        public int SomePrice { get; set; }
+
+        //•	Add new property DiscountType to Passenger class(Homework 3).
+        public DiscountType DiscountType { get; set; }
+
         //Passenger.Make DateOfRegistration field readonly;
         public DateTime DateOfRegistration { get { return DateTime.Now; } } //•	Make DateOfRegistration property only get access method;
 
         //•	Create parameter constructor for Passenger class.
-        public Passenger(string firstName, string lastName, int age, DateTime regDate, bool isPrimary)
+        public Passenger(string firstName, string lastName, int age, DateTime regDate, bool isPrimary, DiscountType discountType)
         {
-            firstName = "Leo";
-            lastName = "Messi";
-            age = 12;
-            regDate = DateTime.Now;
-            isPrimary = true;
-
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            RegDate = regDate;
+            IsPrimary = isPrimary;
+            DiscountType = discountType;
         }
         public void wde()
         {
-           
+
 
         }
     }

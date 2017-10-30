@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork2
 {
-   public class Flight
+    public class Flight
     {
         public string from;
         public string to;

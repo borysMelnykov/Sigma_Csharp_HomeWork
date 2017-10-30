@@ -9,8 +9,18 @@ namespace HomeWork2
     //•	Create class AirplaneRoute with following fields Airplane and Tickets, Date
     public class AirplaneRoute
     {
-        public string airplane { get; set; }
-        public string tickets { get; set; }
-        public string date { get; set; }
+        public Airplaine airplaine { get; set; }
+        public List<Ticket> tickets { get; set; }
+        public DateTime date { get; set; }
+
+        public AirplaneRoute(Airplaine airplaine, List<Ticket> tickets, DateTime date)
+        {
+            this.airplaine = airplaine;
+            this.tickets = tickets;
+            this.date = date;
+
+        }
+
+
     }
 }
